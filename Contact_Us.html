@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>Contact - HatchTank</title>
+        <link rel ="icon" href = "./images/Icontp.png" type = "image/x-icon">
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <section id="navcontainer">
+                <div class="nav-left ease-up">
+                    <a href="index.html"><img src="./images/HT_logo_header.png" width="200" height=auto alt="HatchTank Logo Header"></a>
+                    <div class="mobiletoggle" 
+                    aria-controls="mobile" aria-expanded="false">
+                        <div class="navicon" onclick="myFunction(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mobile" data-visible="false" class="ease-up">
+                    <div class="nav-center">
+                        <a href="About_Us.html">About Us</a>
+                        <a href="Services.html">Services</a>
+                        <a href="Articles.html">Articles</a>
+                    </div>
+                        <div class="nav-right">
+                        <button><a href="Contact_Us.html">Contact Us</a></button>
+                    </div>
+                </div>
+            </section>  
+
+        </header>
+
+        <main>
+            <section id="Contact_Us">
+                <div class="Contact_Ustext"> 
+                    <h2 class="ease-up">Questions? <br> We’re here to help.</h2>
+                    <br>
+                    <p><strong>Drop us an email at</strong></p>
+                    <a href="mailto:hatchtankconsulting@gmail.com">hatchtankconsulting@gmail.com</a>
+                    <!--
+                    <br>
+                    <br>
+                    <p><strong>Or drop us a message</strong></p>
+                    <br>
+                    <button id="show-form" class="ease-up">Message Us</button>
+                    -->
+                </div>
+                <div>
+                    <img class="Contact_Usimage ease-up" src="./images/Contact_us_section.jpg" width="300" height="450" alt="">
+                </div>
+            </section>
+
+            <section id="popupwindow">
+            <section id="popup">
+                <div class="form">
+                    <div class="boxa1"><h3>How can we help you?</h3></div>
+                    <div class="close-btn boxa2">&times</div>
+                    <div class="form-element box1">
+                        <label for="firstname">Name</label>
+                        <input type="shorttext" id="firstname" required>
+                        <label for="firstname"><small>First Name</small></label>
+                    </div>
+                    <div class="form-element box2">
+                        <br>
+                        <input type="shorttext" id="lastname" required>
+                        <label for="lastname"><small>Last Name</small></label>
+                    </div>
+                    <div class="form-element box3">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" required>
+                    </div>
+                    <div class="form-element box4">
+                        <label for="message">Message</label>
+                        <input type="paragraph" id="message" required>
+                    </div>
+                    <div class="form-element box5">
+                        <button class="button">Submit</button>
+                    </div>
+                </div>
+            </section>
+            <section id="popupbg"></section>
+            </section>
+        </main>
+
+        <footer>
+            <section id="whitefooter1">
+                <div class="footer1left">
+                    <div class="ease-up">
+                    <p>Personalized coaching and consulting</p>
+                    <p>HatchTank Consulting Enterprise (003302174-H)</p>
+                    </div>
+                </div>
+                <ul class="footer1right">
+                    <div class="ease-up">
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Articles.html">Articles</a></li>
+                    <li><a href="Contact_Us.html">Contact</a></li>
+                    </div>
+                </ul>
+            </section>
+        </footer>
+ 
+        <script src="navigation.js" defer></script>
+
+    </body>
+
+</html>
