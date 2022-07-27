@@ -48,13 +48,11 @@
                     <br>
                     <p><strong>Drop us an email at</strong></p>
                     <a href="mailto:hatchtankconsulting@gmail.com">hatchtankconsulting@gmail.com</a>
-                    <!--
                     <br>
                     <br>
                     <p><strong>Or drop us a message</strong></p>
                     <br>
                     <button id="show-form" class="ease-up">Message Us</button>
-                    -->
                 </div>
                 <div>
                     <img class="Contact_Usimage ease-up" src="./images/Contact_us_section.jpg" width="300" height="450" alt="">
@@ -63,31 +61,31 @@
 
             <section id="popupwindow">
             <section id="popup">
-                <div class="form">
+                <form action="mail.php" method="POST">
                     <div class="boxa1"><h3>How can we help you?</h3></div>
                     <div class="close-btn boxa2">&times</div>
                     <div class="form-element box1">
                         <label for="firstname">Name</label>
-                        <input type="shorttext" id="firstname" required>
+                        <input type="text" name="firstname" id="firstname" required>
                         <label for="firstname"><small>First Name</small></label>
                     </div>
                     <div class="form-element box2">
                         <br>
-                        <input type="shorttext" id="lastname" required>
+                        <input type="text" name="lastname" id="lastname" required>
                         <label for="lastname"><small>Last Name</small></label>
                     </div>
                     <div class="form-element box3">
                         <label for="email">Email</label>
-                        <input type="text" id="email" required>
+                        <input type="email" name="email" id="email" required>
                     </div>
                     <div class="form-element box4">
                         <label for="message">Message</label>
-                        <input type="paragraph" id="message" required>
+                        <textarea name="message" rows="10" cols="30" required></textarea>
                     </div>
                     <div class="form-element box5">
-                        <button class="button">Submit</button>
+                        <input type="submit" value="Submit">
                     </div>
-                </div>
+                </form>
             </section>
             <section id="popupbg"></section>
             </section>
